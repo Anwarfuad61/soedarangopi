@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soedara Ngopi</title>
+    <link rel="icon" type="image/png" href="image/logosdr.png" />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome CDN Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a href="#home" class="logo"
+        >Soedara Ngopi <i class="fas fa-mug-hot"></i
+      > <span class="logo-subtext">by Bayu Adit</span>
+    </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">tentang</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#book">Lokasi</a>
+      </nav>
+
+      <a
+        href="https://api.whatsapp.com/send/?phone=%2B6289651694396&text=Halo%20saya%20ingin%20berhubungan%20dengan%20Soedara%20Ngopi&type=phone_number&app_absent=0"
+        target="_blank"
+        class="btn"
+        >Reservasi</a
+      >
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Semua Orang Berhak Ngopi</h3>
+          <a href="https://wa.me/6289651694396" target="_blank" class="btn"
+            >Pesan Sekarang</a
+          >
+        </div>
+
+        <div class="image">
+          <img src="image/p.png" class="main-home-image" alt="" />
+        </div>
+      </div>
+
+      <div class="image-slider">
+        <img src="image/p.png" alt="" />
+        <img src="image/home-img-2.png" alt="" />
+        <img src="image/home-img-3.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h1 class="heading">about us <span>Soedara Ngopi</span></h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="image/open.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3 class="title">Kopi kami, teman setia menemanimu!</h3>
+          <p>
+            Di Soedara Ngopi, kami percaya bahwa secangkir kopi adalah lebih
+            dari sekadar minuman. Ini adalah momen untuk bersantai, berdiskusi,
+            atau sekadar menikmati ketenangan. Setiap biji kopi kami pilih
+            dengan cermat dan diproses dengan penuh kasih sayang untuk
+            memberikan Anda pengalaman kopi yang tak terlupakan.
+          </p>
+          <a href="galeri.html" class="btn">Galeri Soedara Ngopi</a>
+          <div class="icons-container">
+            <div class="icons">
+              <img src="image/about-icon-1.png" alt="" />
+              <h3>quality coffee</h3>
+            </div>
+            <div class="icons">
+              <img src="image/about-icon-2.png" alt="" />
+              <h3>our branches</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <h1 class="heading">Menu Kami <span>Soedara Ngopi</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <!--  menampilkan menu-->
+          <div class="content">
+            <h3>Semua Menu Kami</h3>
+            <img
+              src="image/menu.jpg"
+              alt="Menu Kami"
+              onclick="showImage(this)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal untuk gambar pop-up -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <!-- Tombol Download -->
+        <a id="downloadBtn" href="image/menu.jpg" download>
+          <button class="download-btn">Download Gambar</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+      <h1 class="heading">reviews <span>what people says</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-1.png" alt="" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              https://instagram.com/soedara_ngopi?igshid=MTg0ZDhmNDA= Nyaman go
+              nugas nongkrong kro mabar
+            </p>
+            <h3>Anwar fuad</h3>
+            <span>2 ulasan · 5 foto</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-2.png" alt="" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Pelayanannya ramah.. tempatnya nyaman,luas,bersih😇👍 menunya juga
+              enak2 apa lagi nasi omletnyaa 10k udah dapet air putih satu gelas
+              (khusus makan di tempat) cocok banget buat yang lg laper pngn
+              makan+minum tapi budgednya minimm🤗🙏
+            </p>
+            <h3>Rini Isfa</h3>
+            <span>1 ulasan · 3 foto</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-3.png" alt="" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Kita hanya lah insan yang lemah,selalu kecewa karena harapan,bisa
+              apa selain memaafkan
+            </p>
+            <h3>Ryan Vanss</h3>
+            <span>2 ulasan · 8 foto</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-4.png" alt="" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Pas banget buat kantong pelajar seperti saya</p>
+            <h3>Angga Ardian</h3>
+            <span>1 ulasan · 1 foto</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+      <h1 class="heading">Location <span>Soedara Ngopi</span></h1>
+
+      <!-- Menampilkan Google Maps -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5601.223070544121!2d109.12979458293552!3d-6.930844735094969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb92d874db48b%3A0x2a3e66937f92428a!2sSoedara%20Ngopi!5e0!3m2!1sid!2sid!4v1734171754136!5m2!1sid!2sid"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+<section class="footer">
+  <div class="box-container">
+    <!-- Logo -->
+    <div class="box logo-box">
+      <img src="image/sdrlog.png" alt="Logo" class="footer-logo" />
+      <p class="footer-address">
+        <a href="https://www.google.co.id/search?q=soedara%20ngopi" target="_blank" class="address-link">
+          Ds. Pesalakan RT 27, RT.27/RW.04, Kec. Adiwerna, Kabupaten Tegal, Jawa Tengah 52194
+        </a>
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="box contact-box">
+      <h3>Contact Info</h3>
+      <a href="https://www.facebook.com/salsa.cantika.3363" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.tiktok.com/@soedara_ngopi" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a>
+      <a href="https://www.instagram.com/soedara_ngopi/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <!-- Credit Section -->
+  <div class="credit">
+    Created by <a href="https://www.instagram.com/username" target="_blank" class="credit-link">
+      <span>Awang</span>
+    </a>  &copy; 2024 | Soedara Ngopi
+  </div>
+</section>
+
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

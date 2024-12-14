@@ -1,0 +1,78 @@
+
+/* CSS untuk Halaman Galeri */
+.gallery {
+  
+  text-align: center;
+
+}
+
+.gallery h2 {
+font-size: 10rem;
+  color: #333; /* Warna teks jelas */
+  margin-top: 8rem;
+  text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  }
+  .gallery h2 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-container .gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-container .gallery-item video {
+    width: 100%; /* Video memenuhi lebar parent */
+    height: auto; /* Menjaga proporsi */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    display: block;
+  }
+
+.gallery-container .gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+
+    .gallery-container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lebarkan kolom */
+      gap: 3rem; /* Jarak antar elemen lebih besar */
+    }
+  }
+  
+  .gallery-container .gallery-item video,
+  .gallery-item img {
+    width: 100%; /* Agar video dan gambar memenuhi lebar kontainer */
+    height: auto; /* Menjaga proporsi */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    display: block;
+  }
