@@ -1,0 +1,63 @@
+/* SHOPEEFOOD SECTION */
+.shopeefood {
+  padding: 4rem 9%;
+  background: #f9f9f9;
+}
+
+.shopeefood .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.shopeefood .row .image {
+  flex: 1 1 40rem;
+  text-align: center; /* Pusatkan gambar */
+}
+
+.shopeefood .row .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Sudut melengkung */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi hover */
+}
+
+.shopeefood .row .image img:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal saat hover */
+}
+
+.shopeefood .row .content {
+  flex: 1 1 40rem;
+}
+
+.shopeefood .row .content h3 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.shopeefood .row .content p {
+  font-size: 1.6rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.shopeefood .row .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  background: #ff6b6b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.shopeefood .row .content .btn:hover {
+  background: #ff4c4c;
+}
